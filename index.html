@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A1.2 Meine Wohnung Hausaufgaben</title>
+    <style>
+        /* GENEL STİLLER */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #e9ecef; color: #333; }
+        .container { max-width: 900px; margin: 30px auto; background: white; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-radius: 12px; }
+        .header { text-align: center; margin-bottom: 30px; border-bottom: 2px solid #007bff; padding-bottom: 15px; }
+        .header h1 { color: #007bff; font-size: 2em; margin-bottom: 5px; }
+        .header p { margin: 5px 0; }
+        
+        /* ÖDEV BÖLÜMLERİ */
+        .task-section { margin-bottom: 40px; padding: 20px; border: 1px solid #ddd; border-radius: 10px; background-color: #f8f9fa; }
+        .task-section h2 { color: #dc3545; border-bottom: 1px dashed #ccc; padding-bottom: 10px; margin-top: 0; }
+        .task-section p { margin-bottom: 15px; }
+
+        /* TABLO VE INPUT STİLLERİ */
+        .answer-input { padding: 5px; border: 1px solid #ccc; border-radius: 4px; width: 100%; box-sizing: border-box; }
+        .small-input { width: 40%; display: inline-block; margin-right: 10px; }
+        
+        /* GÖRSEL STİLİ */
+        .task-image { max-width: 100%; height: auto; border: 1px solid #ccc; border-radius: 8px; margin-bottom: 20px; }
+        
+        /* YAZMA VE KONUŞMA STİLLERİ */
+        textarea { width: 95%; min-height: 150px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 1em; resize: vertical; }
+        .audio-upload-info { 
+            padding: 15px; 
+            background-color: #ffc10720; 
+            border-left: 5px solid #ffc107; 
+            border-radius: 5px; 
+            font-size: 0.9em;
+            margin-top: 15px;
+        }
+
+        /* ÖZEL KUTULAR */
+        .live-speak-task {
+            background-color: #d4edda;
+            border: 2px solid #28a745;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .live-speak-task h3 {
+            color: #155724;
+            margin-top: 0;
+            border-bottom: 1px dashed #28a745;
+            padding-bottom: 5px;
+        }
+
+        /* ALT BİLGİ */
+        .footer { text-align: center; padding-top: 20px; border-top: 1px solid #ccc; margin-top: 40px; }
+        .footer a { color: #007bff; text-decoration: none; font-weight: 600; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>A1.2 Sprechtraining: Meine Wohnung 🏠</h1>
+        <p>Lektion 35: Detaylı Tekrar ve Pekiştirme Ödevi</p>
+        <p>Eğitmen: **Esra DOĞAN ÜNAL**</p>
+    </div>
+
+    <div class="task-section">
+        <h2>Aufgabe 1: Wortschatz (Wohnformen & Zimmer)</h2>
+        
+        <h3>Bölüm A: Wo wohnst du? (Slayt 3)</h3>
+        <p>Görseldeki 5 ev tipini Almanca adlarıyla eşleştirin ve yazın.</p>
+        <img src="3.jpg" alt="Slayt 3: Ev Tipleri" class="task-image">
+        <ol>
+            <li>Eski bir şehir binası: <input class="answer-input" placeholder=""></li>
+            <li>Yeni yapılmış apartman: <input class="answer-input" placeholder=""></li>
+            <li>Bahçeli, tek ailelik ev: <input class="answer-input" placeholder=""></li>
+            <li>Çok katlı, yüksek bina: <input class="answer-input" placeholder=""></li>
+        </ol>
+
+        <h3>Bölüm B: Wie heißen die Zimmer? (Slayt 5)</h3>
+        <p>Plana bakarak fiillerden oda isimlerini (Komposita) ve doğru artikelini (der/die/das) türetin.</p>
+        <img src="5.jpg" alt="Slayt 5: Odalar Planı" class="task-image">
+        <ol>
+            <li>schlafen → <input class="answer-input small-input" placeholder="Artikel"> <input class="answer-input small-input" placeholder="Zimmer"></li>
+            <li>arbeiten → <input class="answer-input small-input" placeholder="Artikel"> <input class="answer-input small-input" placeholder="Zimmer"></li>
+            <li>baden → <input class="answer-input small-input" placeholder="Artikel"> <input class="answer-input small-input" placeholder="Zimmer"></li>
+        </ol>
+    </div>
+    
+    <div class="task-section">
+        <h2>Aufgabe 2: Grammatik (Komposita & Possessivartikel)</h2>
+        
+        <h3>Bölüm A: Komposita Kuralı (Slayt 7)</h3>
+        <p>Görsele göre kuralı tamamlayın: Birleşik kelimelerin **<span style="color:#007bff; font-weight:bold;">Artikeli</span>** hangi kelimeye göre belirlenir?</p>
+        <img src="7.jpg" alt="Slayt 7: Komposita Kuralı" class="task-image">
+        <input class="answer-input" placeholder="Artikel, birleşik kelimenin hangi parçası tarafından belirlenir?">
+
+        <h3>Bölüm B: Possessivartikel (İyelik Zamirleri)</h3>
+        <p>Boşlukları **mein/meine** veya **sein/seine/ihr/ihre** ile doldurun.</p>
+        <ol>
+            <li>Ich habe ein **Sofa** (das). Das ist <input class="answer-input small-input" placeholder=""> Sofa.</li>
+            <li>Maria hat eine **Waschmaschine** (die). Das ist <input class="answer-input small-input" placeholder=""> Waschmaschine.</li>
+            <li>Max hat einen **Schrank** (der). Das ist <input class="answer-input small-input" placeholder=""> Schrank.</li>
+        </ol>
+    </div>
+
+    <div class="task-section">
+        <h2>Aufgabe 3: Leseverständnis (Slayt 4)</h2>
+        <p>Görseldeki sosyal medya postunu inceleyerek alıştırmayı tamamlayın.</p>
+        <img src="4.jpg" alt="Slayt 4: Social Media Post" class="task-image">
+        
+        <ol>
+            <li>Patka und Katka wohnen im <input class="answer-input" placeholder=""> Stock. (Posta göre)</li>
+            <li>Die neue Wohnung hat <input class="answer-input" placeholder=""> Zimmer. (Görsele göre tahmini cevap)</li>
+            <li>Farid fragt: Ist das eine <input class="answer-input" placeholder="">? (Yorumlara göre)</li>
+        </ol>
+    </div>
+
+    <div class="task-section">
+        <h2>Aufgabe 4: Schreiben (Yazma) - Meine Wohnung (Detaylı)</h2>
+        <p>Kendi evinizi tanıtan, en az 10 tam Almanca cümle yazın. Slayt 2'deki hedeflere ulaşın ve Slayt 8'deki sorulara cevap verin.</p>
+        <img src="2.jpg" alt="Slayt 2: Lernziele" class="task-image">
+        <img src="8.jpg" alt="Slayt 8: Welche Zimmer gibt es?" class="task-image">
+        <ul>
+            <li>Hangi tip evde yaşıyorsunuz? (Altbau/Neubau vb.)</li>
+            <li>Kaç odası var? Hangi odalar var? (Bad, Küche, Flur, Wohnzimmer...)</li>
+            <li>En sevdiğiniz oda hangisi ve neden?</li>
+            <li>Odada hangi mobilyalar/eşyalar var? (Slayt 9 ve 13'e bakın)</li>
+        </ul>
+        <textarea id="writing_homework" placeholder="Buraya en az 10 cümlelik metninizi yazın..."></textarea>
+    </div>
+
+    <div class="task-section">
+        <h2>Aufgabe 5: Sprechübung (Ses Kaydı) - Konuşma ve Telaffuz</h2>
+        
+        <div class="live-speak-task">
+            <h3>📢 BÖLÜM A: ZORUNLU KONUŞMA ÖDEVİ - Mobilya Tanıtımı</h3>
+            <p><strong>Lütfen evinizdeki en sevdiğiniz 3 mobilyayı (Möbel) seçin.</strong> Bu mobilyaların Almanca adlarını, artikellerini ve nerede bulunduklarını Almanca 3-5 cümle ile anlatın.</p>
+            <img src="9.jpg" alt="Slayt 9: Mobilya" class="task-image">
+            <p style="font-style: italic;">(Örnek: Das ist mein Bett. Das Bett ist sehr groß. Es ist im Schlafzimmer.)</p>
+        </div>
+        
+        <div style="margin-top: 20px;">
+            <h3>BÖLÜM B: Telaffuz ve Vurgu (Slayt 10)</h3>
+            <p>Slayt 10'daki kelimeleri dikkatle okuyarak kelime vurgusuna (**Wortakzent**) odaklanarak kaydınıza ekleyin.</p>
+            <img src="10.jpg" alt="Slayt 10: Komposita Vurgusu" class="task-image">
+            <ol>
+                <li>das Wohnzimmer</li>
+                <li>die Badewanne</li>
+                <li>das Einfamilienhaus</li>
+            </ol>
+        </div>
+        
+        <div class="audio-upload-info">
+            Ses kaydınızı (mp3, m4a veya wav formatında) kaydettikten sonra, bu dosyayı eğitmeninize e-posta/WhatsApp yoluyla gönderiniz.
+        </div>
+        <input type="file" accept="audio/*,video/*" id="voice_recording">
+    </div>
+
+    <div class="footer">
+        <p>Ödevinizi tamamladıktan sonra lütfen [E-posta/WhatsApp] üzerinden gönderin.</p>
+        <p>İletişim: <a href="https://www.instagram.com/esrdgnn" target="_blank">@esrdgnn (Instagram)</a></p>
+    </div>
+
+</div>
+
+</body>
+</html>
